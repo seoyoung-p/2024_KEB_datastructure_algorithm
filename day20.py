@@ -24,7 +24,7 @@ def factorial(number) -> int:
 
 def nCr(n, r) -> int:
     '''
-    조합 함수
+    combination function
     :param n:
     :param r:
     :return:
@@ -32,11 +32,3 @@ def nCr(n, r) -> int:
     numerator = factorial(n)
     denominator = factorial(n-r) * factorial(r)
     return int(numerator / denominator)
-
-
-if __name__ == "__main__":
-    # n = int(input("Input n : "))
-    # r = int(input("Input r : "))
-    # print(f"{n}C{r} = {nCr(n, r)}")
-    f = int(input())
-    print(factorial(f))
